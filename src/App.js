@@ -11,15 +11,15 @@ class App extends React.Component {
     };
 
     this.onChangeTabButton = this.onChangeTabButton.bind(this)
-    this.onTabChange = this.onTabChange.bind(this)
+    this.changeTab = this.changeTab.bind(this)
   }
 
   onChangeTabButton() {
     console.log("button was pressed")
-    this.onTabChange((this.state.tab_id + 1) % 4)
+    this.changeTab((this.state.tab_id) % 5 + 1)
   }
 
-  onTabChange(newState) {
+  changeTab(newState) {
     console.log("App.js setState called with value " + newState)
     this.setState(state => {
       return {tab_id: newState}
@@ -30,7 +30,7 @@ class App extends React.Component {
     return (
       <div>
         <TabList 
-          onChangeTabButton={this.onChangeTabButton}
+          onChangeTab={this.changeTab}
           currentTabID={this.state.tab_id}
         ></TabList>
         <Body></Body>
