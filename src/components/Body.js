@@ -35,11 +35,9 @@ class Body extends React.Component {
 
     return (
       <div>
-        I am body Component
 
         {selectedComponent}
 
-        End of body Component
       </div>
     )
     

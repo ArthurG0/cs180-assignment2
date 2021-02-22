@@ -21,7 +21,6 @@ class TabList extends React.Component {
 
     return (
       <div>
-        <p>I am TabList {this.props.currentTabID}</p>
         {
           this.listOfTabs.map( (tab) =>
 

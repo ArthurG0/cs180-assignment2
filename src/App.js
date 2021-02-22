@@ -41,10 +41,7 @@ class App extends React.Component {
         <Body
           currentTabID={this.state.tab_id}
         ></Body>
-        <p>Hello Arthur</p>
-        <button onClick={this.onChangeTabButton}>Click me</button>
-        <p>{this.state.tab_id}</p>
-
+        
       </div>
     );
   }

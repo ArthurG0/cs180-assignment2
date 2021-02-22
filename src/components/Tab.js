@@ -97,7 +97,7 @@ class Tab extends React.Component {
       onMouseLeave={this.onMouseExit}
       onClick={this.onIWasPressed}
       >
-        {this.props.id}{this.props.id === this.props.selectedId ? " a" : " n a"}{this.state.beingHovered ? " h": " n h"}
+        {this.props.name}
       </div>
     );
   }

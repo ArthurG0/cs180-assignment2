@@ -34,11 +34,14 @@ class Image extends React.Component {
     super(props);
 
     this.state = {
-        scroll: 0
+        scroll: 0,
+        enlargedImage: null
     }
 
     this.handleScroll = this.handleScroll.bind(this)
     this.returnToTop = this.returnToTop.bind(this)
+    this.handleImageClick = this.handleImageClick.bind(this)
+    this.handleOverlayClick = this.handleOverlayClick.bind(this)
 
   }
 
@@ -47,6 +50,16 @@ class Image extends React.Component {
   }
   componentWillUnmount() {
       window.removeEventListener('scroll', this.handleScroll);
+  }
+
+  handleImageClick(event) {
+      console.log(`standard image clicked ${event.target.src}`)
+      this.setState({enlargedImage: event.target.src})
+  }
+
+  handleOverlayClick(event) {
+      console.log(`overlay clicked`)
+      this.setState({enlargedImage: null})
   }
   
   handleScroll(event) {
@@ -111,10 +124,73 @@ class Image extends React.Component {
         flexWrap: "wrap"
     }
 
+    let enlargedImageObjectStyle = {
+
+        /*
+        overLayImage.style.width = "90vmin"
+                overLayImage.style.opacity = "1"
+                overLayImage.style.zIndex = "10000"
+                overLayImage.style.margin = "auto"
+                overLayImage.style.position = "fixed"
+                overLayImage.style.top = "50vh"
+                overLayImage.style.left = "50vw"
+                overLayImage.style.transform = "translate( -50%, -50% )"
+        */
+       width: "90vmin",
+       opacity: "1",
+       zIndex: "5000",
+       margin: "auto",
+       position: "fixed",
+       top: "50vh",
+       left: "50vw",
+       transform: "translate(-50%, -50%)"
+
+    }
+    let overLayObjectStyle = {
+        /*
+        grayOverlay.style.position = "fixed"
+                grayOverlay.style.display = "flex"
+                grayOverlay.style.alignItems = "center"
+                grayOverlay.style.justifyContent = "center"
+                grayOverlay.style.top = "0"
+                grayOverlay.style.left = "0"
+                grayOverlay.style.width = "100%"
+                grayOverlay.style.height = "100%"
+                grayOverlay.style.backgroundColor = "#000000"
+                grayOverlay.style.opacity = "0"
+        */
+       position: "fixed",
+       display: "flex",
+       alignItems: "center",
+       justifyContent: "center",
+       top: "0",
+       left: "0",
+       width: "100%",
+       height: "100%",
+       backgroundColor: "black",
+       opacity: "0"
+    }
+
+    let enlargedImageObject;
+    let overLayObject;
+    if(this.state.enlargedImage){
+        enlargedImageObject = 
+        <img
+            src = {this.state.enlargedImage}
+            style = {enlargedImageObjectStyle}
+        ></img>
+        overLayObject = <div
+            onClick = {this.handleOverlayClick}  
+            style = {overLayObjectStyle}
+        ></div>
+    }
+
     return (
       <div >
-          Image Compomenent
+
           <h2>Porsche 911 through generations: gallery</h2>
+          {overLayObject}
+          {enlargedImageObject}
           <button
             style={scrollToTopObjectStyle}
             onClick={this.returnToTop}
@@ -123,7 +199,12 @@ class Image extends React.Component {
             {
                 imagesArray.map((image) => 
                     <div style={wrapperObjectStyle}>
-                        <img src={image} style={imageObjectStyle}></img>
+                        <img
+                            src={image}
+                            style={imageObjectStyle}
+                            onClick={this.handleImageClick}
+                            
+                        ></img>
                     </div>
                 )
             }
