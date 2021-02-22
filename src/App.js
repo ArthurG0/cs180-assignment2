@@ -27,13 +27,20 @@ class App extends React.Component {
   }
 
   render() {
+
+    let globalStyle = {
+      paddingTop: "10px",
+      paddingLeft: "10px"
+    }
     return (
-      <div>
+      <div style={globalStyle}>
         <TabList 
           onChangeTab={this.changeTab}
           currentTabID={this.state.tab_id}
         ></TabList>
-        <Body></Body>
+        <Body
+          currentTabID={this.state.tab_id}
+        ></Body>
         <p>Hello Arthur</p>
         <button onClick={this.onChangeTabButton}>Click me</button>
         <p>{this.state.tab_id}</p>

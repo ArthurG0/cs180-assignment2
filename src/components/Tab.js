@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { isWhiteSpaceSingleLine } from 'typescript';
+
 
 class Tab extends React.Component {
 
