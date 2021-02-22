@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/cs180-assignment3/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/cs180-assignment3/static/js/main.5ffb658d.chunk.js",
-    "main.js.map": "/cs180-assignment3/static/js/main.5ffb658d.chunk.js.map",
+    "main.js": "/cs180-assignment3/static/js/main.25c722b4.chunk.js",
+    "main.js.map": "/cs180-assignment3/static/js/main.25c722b4.chunk.js.map",
     "runtime-main.js": "/cs180-assignment3/static/js/runtime-main.af4c7792.js",
     "runtime-main.js.map": "/cs180-assignment3/static/js/runtime-main.af4c7792.js.map",
-    "static/js/2.774f168b.chunk.js": "/cs180-assignment3/static/js/2.774f168b.chunk.js",
-    "static/js/2.774f168b.chunk.js.map": "/cs180-assignment3/static/js/2.774f168b.chunk.js.map",
+    "static/js/2.4d3ff6b4.chunk.js": "/cs180-assignment3/static/js/2.4d3ff6b4.chunk.js",
+    "static/js/2.4d3ff6b4.chunk.js.map": "/cs180-assignment3/static/js/2.4d3ff6b4.chunk.js.map",
     "static/js/3.d9a1ceef.chunk.js": "/cs180-assignment3/static/js/3.d9a1ceef.chunk.js",
     "static/js/3.d9a1ceef.chunk.js.map": "/cs180-assignment3/static/js/3.d9a1ceef.chunk.js.map",
     "index.html": "/cs180-assignment3/index.html",
     "static/css/main.6dea0f05.chunk.css.map": "/cs180-assignment3/static/css/main.6dea0f05.chunk.css.map",
-    "static/js/2.774f168b.chunk.js.LICENSE.txt": "/cs180-assignment3/static/js/2.774f168b.chunk.js.LICENSE.txt",
+    "static/js/2.4d3ff6b4.chunk.js.LICENSE.txt": "/cs180-assignment3/static/js/2.4d3ff6b4.chunk.js.LICENSE.txt",
     "static/media/porsche_1.2e4441d1.jpg": "/cs180-assignment3/static/media/porsche_1.2e4441d1.jpg",
     "static/media/porsche_10.b28c53f7.jpg": "/cs180-assignment3/static/media/porsche_10.b28c53f7.jpg",
     "static/media/porsche_11.7a960a5d.jpg": "/cs180-assignment3/static/media/porsche_11.7a960a5d.jpg",
@@ -37,12 +37,16 @@
     "static/media/porsche_6.ab085502.jpg": "/cs180-assignment3/static/media/porsche_6.ab085502.jpg",
     "static/media/porsche_7.886a5329.jpg": "/cs180-assignment3/static/media/porsche_7.886a5329.jpg",
     "static/media/porsche_8.b959db3a.jpg": "/cs180-assignment3/static/media/porsche_8.b959db3a.jpg",
-    "static/media/porsche_9.629e0d0d.jpg": "/cs180-assignment3/static/media/porsche_9.629e0d0d.jpg"
+    "static/media/porsche_9.629e0d0d.jpg": "/cs180-assignment3/static/media/porsche_9.629e0d0d.jpg",
+    "static/media/supersonic_1.c1aea0cd.mp4": "/cs180-assignment3/static/media/supersonic_1.c1aea0cd.mp4",
+    "static/media/supersonic_2.6bf39b72.mp4": "/cs180-assignment3/static/media/supersonic_2.6bf39b72.mp4",
+    "static/media/supersonic_3.e213a5a1.mp4": "/cs180-assignment3/static/media/supersonic_3.e213a5a1.mp4",
+    "static/media/supersonic_4.d8042f2f.mp4": "/cs180-assignment3/static/media/supersonic_4.d8042f2f.mp4"
   },
   "entrypoints": [
     "static/js/runtime-main.af4c7792.js",
-    "static/js/2.774f168b.chunk.js",
+    "static/js/2.4d3ff6b4.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.5ffb658d.chunk.js"
+    "static/js/main.25c722b4.chunk.js"
   ]
 }
